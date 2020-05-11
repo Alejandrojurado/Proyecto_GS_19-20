@@ -1,4 +1,21 @@
 #tamno_logo{
-      width: 25%;
-      height: 25%;
+      width: 250px;
+      height: 150px;
+
+
+}
+.margen_izquerda{
+     margin-right: 7%;
+}
+
+.colores{
+     background-color: white;
+}
+.tamano_img{
+     max-width: 100%;
+     width: 80%;
+
+}
+.centro{
+     margin: 0 auto;
 }
