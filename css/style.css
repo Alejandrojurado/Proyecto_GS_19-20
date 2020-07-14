@@ -19,3 +19,10 @@
 .centro{
      margin: 0 auto;
 }
+.fondo{
+     background-color: #ece2c6 ;
+}
+.margen{
+     margin-left: 0.2%;
+     margin-right: 0.2;
+}
