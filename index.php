@@ -22,7 +22,7 @@ session_start();
                 <div class="col">
                      <ul class="nav justify-content-end">
                           <li class="nav-item active">
-                               <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                               <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                           </li>
                           <li class="nav-item active">
                                <a class="nav-link" href="#">Contacto</a>
@@ -98,40 +98,101 @@ session_start();
            </div>
       </div>
       <!--Productos-->
-      <div class="row ">
-           <div class="col-4">
-                <div class="card" style="width: 18rem;">
-                     <img src="..." class="card-img-top" alt="...">
-                     <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+      <div class="row  ">
+           <div class=" col-sm-8 col-md-7 centro margen_top ">
+                <div class="row ">
+                     <div class=" col-sm-8 col-md-3  ">
+                          <div class="card targeta tarjeta"  >
+                               <img src="image/marcas/gafas.jpg" class="card-img-top" alt="...">
+                               <div class="card-body tarjeta">
+                                    <h4 class="card-title letra">GATORZ NOSEPIECE CLEAR</h4>
+                                    <h5 class="card-text letra">250€</h5>
+                                    <a href="index.php"><button type="button" class="btn" href="index.php"  ><img src="image/iconos/cesta (2).png" alt=""></button></a>
+                               </div>
+                          </div>
                      </div>
-                </div>
-           </div>
-           <div class="col-4">
-                <div class="card" style="width: 18rem;">
-                     <img src="..." class="card-img-top" alt="...">
-                     <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                     <div class=" col-sm-8 col-md-3  ">
+                          <div class="card targeta tarjeta"  >
+                               <img src="image/marcas/gafas.jpg" class="card-img-top" alt="...">
+                               <div class="card-body tarjeta">
+                                    <h5 class="card-title tarjeta">Card title</h5>
+                                    <p class="card-text tarjeta">aaaa</p>
+                                    <a href="index.php"><button type="button" class="btn" href="index.php"  ><img src="image/iconos/cesta (2).png" alt=""></button></a>
+                               </div>
+                          </div>
                      </div>
-                </div>
-           </div>
-           <div class="col-4">
-                <div class="card" style="width: 18rem;">
-                     <img src="..." class="card-img-top" alt="...">
-                     <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                     <div class=" col-sm-8 col-md-3  ">
+                          <div class="card targeta tarjeta"  >
+                               <img src="image/marcas/gafas.jpg" class="card-img-top" alt="...">
+                               <div class="card-body tarjeta">
+                                    <h5 class="card-title tarjeta">Card title</h5>
+                                    <p class="card-text tarjeta">aaaa</p>
+                                    <a href="index.php"><button type="button" class="btn" href="index.php"  ><img src="image/iconos/cesta (2).png" alt=""></button></a>
+                               </div>
+                          </div>
+                     </div>
+                     <div class=" col-sm-8 col-md-3  ">
+                          <div class="card targeta tarjeta"  >
+                               <img src="image/marcas/gafas.jpg" class="card-img-top" alt="...">
+                               <div class="card-body tarjeta">
+                                    <h5 class="card-title tarjeta">Card title</h5>
+                                    <p class="card-text tarjeta">aaaa</p>
+                                    <a href="index.php"><button type="button" class="btn" href="index.php"  ><img src="image/iconos/cesta (2).png" alt=""></button></a>
+                               </div>
+                          </div>
                      </div>
                 </div>
            </div>
       </div>
+      <div class="row  ">
+           <div class=" col-sm-8 col-md-7 centro margen_top ">
+                <div class="row ">
+                     <div class=" col-sm-8 col-md-3  ">
+                          <div class="card targeta tarjeta"  >
+                               <img src="image/marcas/gafas.jpg" class="card-img-top" alt="...">
+                               <div class="card-body tarjeta">
+                                    <h5 class="card-title tarjeta">Card title</h5>
+                                    <p class="card-text tarjeta">aaaa</p>
+                                    <a href="index.php"><button type="button" class="btn" href="index.php"  ><img src="image/iconos/cesta (2).png" alt=""></button></a>
+                               </div>
+                          </div>
+                     </div>
+                     <div class=" col-sm-8 col-md-3  ">
+                          <div class="card targeta tarjeta"  >
+                               <img src="image/marcas/gafas.jpg" class="card-img-top" alt="...">
+                               <div class="card-body tarjeta">
+                                    <h5 class="card-title tarjeta">Card title</h5>
+                                    <p class="card-text tarjeta">aaaa</p>
+                                    <a href="index.php"><button type="button" class="btn" href="index.php"  ><img src="image/iconos/cesta (2).png" alt=""></button></a>
+                               </div>
+                          </div>
+                     </div>
+                     <div class=" col-sm-8 col-md-3  ">
+                          <div class="card targeta tarjeta"  >
+                               <img src="image/marcas/gafas.jpg" class="card-img-top" alt="...">
+                               <div class="card-body tarjeta">
+                                    <h5 class="card-title tarjeta">Card title</h5>
+                                    <p class="card-text tarjeta">aaaa</p>
+                                    <a href="index.php"><button type="button" class="btn" href="index.php"  ><img src="image/iconos/cesta (2).png" alt=""></button></a>
+                               </div>
+                          </div>
+                     </div>
+                     <div class=" col-sm-8 col-md-3  ">
+                          <div class="card targeta tarjeta"  >
+                               <img src="image/marcas/gafas.jpg" class="card-img-top" alt="...">
+                               <div class="card-body tarjeta">
+                                    <h5 class="card-title tarjeta">Card title</h5>
+                                    <p class="card-text tarjeta">aaaa</p>
+                                    <a href="index.php"><button type="button" class="btn" href="index.php"  ><img src="image/iconos/cesta (2).png" alt=""></button></a>
+                               </div>
+                          </div>
+                     </div>
+                </div>
+           </div>
+      </div>
+
       <!-- Footer -->
-      <footer class="page-footer font-small blue">
+      <footer class="page-footer font-small blue margen_top">
 
            <!-- Copyright -->
            <div class="footer-copyright text-center py-3">© 2020 Copyright:

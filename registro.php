@@ -1,4 +1,4 @@
-<?php include('actions/server.php') ?>
+
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
   <head>
@@ -74,56 +74,58 @@
                 One of three columns
            </div>
            <div class="col-6">
-                <form method="post" action="actions/server.php" >
-                     <?php include('actions/errors.php'); ?>
+                <form method="post" action="actions/capturar.php"  >
+
                      <div class="form-row">
                           <div class="form-group col-md-6">
                                <label for="inputEmail4">Email</label>
-                               <input type="email" class="form-control" name="email" id="email" placeholder="Email" value="<?php echo $email; ?>">
+                               <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
                           </div>
                           <div class="form-group col-md-3">
-                               <label for="inputPassword4">Password</label>
-                               <input type="password" class="form-control" name="password" id="password1" placeholder="Password">
+                               <label for="inputPassword4">Contraseña</label>
+                               <input type="password" class="form-control" name="password1" id="password1" placeholder="Password" required>
                           </div>
                           <div class="form-group col-md-3">
                                <label for="inputPassword4">Confirmacion Contraseña</label>
-                               <input type="password" class="form-control" name="password" id="password2" placeholder="Password">
+                               <input type="password" class="form-control" name="password2" id="password2" placeholder="Password" required>
+                               <span id="noCoinciden"></span>
                           </div>
                      </div>
                      <div class="form-group">
                           <label for="inputAddress">Nombre</label>
-                          <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" value="<?php echo $name; ?>">
+                          <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" >
                      </div>
                      <div class="form-group">
                           <label for="inputAddress2">Apellidos</label>
-                          <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Apellidos" value="<?php echo $lastname; ?>">
+                          <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Apellidos" >
                      </div>
                      <div class="form-group">
-                          <label for="inputAddress2">Línea 1 de la dirección</label>
-                          <input type="text" class="form-control" id="address1" name="address1" placeholder="Apartment, studio, or floor" value="<?php echo $address1; ?>">
+                          <label for="inputAddress2">Dirección</label>
+                          <input type="text" class="form-control" id="address1" name="address1" placeholder="Apartment, studio, or floor">
                      </div>
                      <div class="form-group">
                           <label for="inputAddress2">Numero de telefono</label>
-                          <input type="text" class="form-control" id="phone" name="phone" placeholder="6441451451" value="<?php echo $phone; ?>">
+                          <input type="text" class="form-control" id="phone" name="phone" placeholder="6441451451" >
                      </div>
                      <div class="form-group">
-                          <label for="inputAddress2">dni</label>
-                          <input type="text" class="form-control" id="dni" name="dni" placeholder="6441451451" value="<?php echo $dni; ?>">
+                          <label for="inputAddress2">D.N.I</label>
+                          <input type="text" class="form-control" id="dni" name="dni" placeholder="6441451451" >
                      </div>
                      <div class="form-row">
                           <div class="form-group col-md-6">
                                <label for="inputCity">Ciudad</label>
-                               <input type="text" class="form-control" id="city" name="city" value="<?php echo $city; ?>">
+                               <input type="text" class="form-control" id="city" name="city" >
                           </div>
                           <div class="form-group col-md-4">
                                <label for="inputZip">Provincia</label>
-                               <input type="text" class="form-control" id="stage" name="stage" value="<?php echo $stage; ?>">
+                               <input type="text" class="form-control" id="stage" name="stage">
                           </div>
                           <div class="form-group col-md-2">
-                               <label for="inputZip">Código postal</label>
-                               <input type="text" class="form-control" id="postalcode" name="postalcode"value="<?php echo $zip; ?>">
+                               <label for="inputZip">C.Postal</label>
+                               <input type="text" class="form-control" id="postalcode" name="postalcode">
                           </div>
                      </div>
+                     <span></span>
                      <button type="submit" class="btn btn-primary" name="reg_user">Sign in</button>
                 </form>
            </div>
@@ -151,6 +153,6 @@
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <!-- Optional JavaScript -->
-    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/miJs.js"></script>
   </body>
 </html>
