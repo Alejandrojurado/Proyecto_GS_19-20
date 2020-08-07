@@ -23,7 +23,10 @@
      background-color: #ece2c6 ;
 }
 .targeta{
-     color: #73400d;
+
+     /* background-color: #73400d; */
+     /* background-color: #914f0d; */
+     background-color: #d6c185;
 }
 .margen{
      margin-left: 0.2%;
@@ -34,13 +37,16 @@
 
 
 }
+.img{
+     height: 317px;
+}
 
 .tarjetas{
-     max-width: 14rem;
+     max-width: 16rem;
      max-height: 14rem;
-
-
 }
+
+
 .responsive {
   max-width: 100%;
   height: auto;
