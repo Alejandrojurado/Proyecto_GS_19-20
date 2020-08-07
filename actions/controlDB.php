@@ -1,5 +1,6 @@
 <?php
-
+define("KEY","eslay");
+define("COD","AES-128-ECB");
  class controlDB {
       function __construct(){
            try {
