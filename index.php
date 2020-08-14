@@ -5,6 +5,32 @@ require 'actions/controlDB.php';
 include 'actions/carrito.php';
 include 'template/cabecera.php';
 ?>
+     <!-- carousel -->
+     <div class="row">
+          <div class="col ">
+               <div id="carouselControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                         <div class="carousel-item active">
+                              <img class="d-block w-100 tamano_img" src="image/marcas/UFPRO.jpg" alt="First slide">
+                         </div>
+                         <div class="carousel-item">
+                              <img class="d-block w-100 tamano_img" src="image/marcas/viktosbanner.jpg" alt="Second slide">
+                         </div>
+                         <div class="carousel-item">
+                              <img class="d-block w-100 tamano_img" src="image/marcas/esp.jpg" alt="Third slide">
+                         </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                         <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                         <span class="sr-only">siguiente</span>
+                    </a>
+               </div>
+          </div>
+     </div>
      <!--Productos-->
      <div class="container margen_top ">
           <div class="row">
@@ -38,5 +64,10 @@ include 'template/cabecera.php';
                               </div>
                          </div>
                     </div>
-               </div>
-          <?php include 'template/pie.php' ?>
+               <?php } ?>
+
+
+
+<?php
+include 'template/pie.php';
+ ?>

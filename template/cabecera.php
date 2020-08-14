@@ -24,7 +24,9 @@
                                <a class="nav-link" href="#">Contacto</a>
                           </li>
                           <li class="nav-item active">
-                               <a class="nav-link" href="mostrarCarrito.php">Carrito(0)</a>
+                               <a class="nav-link" href="mostrarCarrito.php">Carrito(<?php
+                               echo (empty($_SESSION['CARRITO']))?0:count($_SESSION['CARRITO']);
+                                ?>)</a>
                           </li>
 
                           <li class="nav-item dropdown active margen_izquerda ">
@@ -52,14 +54,21 @@
                     </ul>
                </div>
           </div>
+     </div>
+     </div>
+          <!--Alert carrito-->
+
           <div class="container margen_top letra">
+               <?php if($mensaje!=""){ ?>
                <div class="alert alert-success">
 
                     <?php echo $mensaje ;?>
-                    <a href="#" class="badge badge-success">Ver Carrito</a>
+                    <a href="mostrarCarrito.php" class="badge badge-success">Ver Carrito</a>
 
                </div>
+               <?php } ?>
           </div>
+
 
            <!--Jumbotron-->
            <div class="jumbotron colores fondo" >
@@ -81,28 +90,3 @@
                 </div>
            </div>
       </nav>
-      <div class="row">
-           <div class="col ">
-                <div id="carouselControls" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                         <div class="carousel-item active">
-                              <img class="d-block w-100 tamano_img" src="image/marcas/UFPRO.jpg" alt="First slide">
-                         </div>
-                         <div class="carousel-item">
-                              <img class="d-block w-100 tamano_img" src="image/marcas/viktosbanner.jpg" alt="Second slide">
-                         </div>
-                         <div class="carousel-item">
-                              <img class="d-block w-100 tamano_img" src="image/marcas/esp.jpg" alt="Third slide">
-                         </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
-                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                         <span class="sr-only">Anterior</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
-                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                         <span class="sr-only">siguiente</span>
-                    </a>
-               </div>
-           </div>
-      </div>
