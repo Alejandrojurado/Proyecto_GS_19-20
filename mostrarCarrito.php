@@ -1,4 +1,6 @@
 <?php
+include 'actions/config.php';
+include 'actions/conexion.php';
 require 'actions/controlDB.php';
 include 'actions/carrito.php';
 include 'template/cabecera.php';

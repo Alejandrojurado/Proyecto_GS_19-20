@@ -1,6 +1,7 @@
 <?php
 define("KEY","eslay");
 define("COD","AES-128-ECB");
+
  class controlDB {
       function __construct(){
            try {
@@ -11,7 +12,7 @@ define("COD","AES-128-ECB");
                 $password = "admin";
 
                 //Conexión
-                $this->con=mysqli_connect($servername,$username,$password) or die ("Error en la coniexion en la Base de datos");
+               $conn=$this->con=mysqli_connect($servername,$username,$password) or die ("Error en la coniexion en la Base de datos");
 
                 //seleccion de BBD
                 mysqli_select_db($this->con,$dbname) or die ("No se encontro la base de datos");
@@ -41,5 +42,12 @@ define("COD","AES-128-ECB");
                echo "se han realizado los cambios";
           }
      }
+     function id($sql){
+          mysqli_query($this->con,$sql);
+          $mysqli->query($query);
+
+          printf ("New Record has id %d.\n", $mysqli->insert_id);
+     }
+
  }
  ?>

@@ -15,9 +15,9 @@ require 'controlDB.php';
 
      $sql="insert into users(email, password, name, lastname, postalcode, direction, city, stage, phonenumber, dni) values('$email', '$pass_cifrado', '$name', '$last', '$addr', '$phone', '$dni', '$city', '$stage', '$postal')";
 
-$obj = new controlDB();
+     $obj = new controlDB();
 
-$obj->actualizar($sql);
+     $obj->actualizar($sql);
 
 header("Status: 301 Moved Permanently");
 header("Location: http://localhost/index.php");
