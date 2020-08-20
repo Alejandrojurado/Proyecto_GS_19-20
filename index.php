@@ -1,6 +1,8 @@
 <?php
 // ob_start();
 // session_start();
+include 'actions/config.php';
+include 'actions/conexion.php';
 require 'actions/controlDB.php';
 include 'actions/carrito.php';
 include 'template/cabecera.php';
@@ -38,6 +40,8 @@ include 'template/cabecera.php';
                $obj = new controlDB();
                $datos=$obj->consultar("select * from  product");
                //print_r($datos);
+               $datos=$pdo->prepare("select * from  product");
+               $datos->execute();
                ?>
 
                <?php foreach ($datos as $productos) {?>
