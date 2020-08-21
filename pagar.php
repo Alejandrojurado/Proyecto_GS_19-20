@@ -116,8 +116,8 @@ if ($_POST) {
                     transactions: [
                         {
                             amount: { total: '<?php echo $total ?>', currency: 'EUR' },
-                            description:"Compra de productos a Develoteca:$0.01",
-                            custom:"Codigo"
+                            description:"Compra de productos en AlphaTactica:<?php echo number_format($total, 2); ?>€",
+                            custom:"<?php echo $SID ?>#<?php echo openssl_encrypt($idVenta,COD,KEY); ?>"
                         }
                     ]
                 }
@@ -128,7 +128,7 @@ if ($_POST) {
 
         onAuthorize: function(data, actions) {
             return actions.payment.execute().then(function() {
-                console.log(data);
+                // console.log(data);
                 window.location="verificador.php?paymentToken="+data.paymentToken+"&paymentID="+data.paymentID;
             });
         }
