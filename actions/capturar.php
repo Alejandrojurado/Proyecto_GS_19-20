@@ -11,8 +11,9 @@ require 'controlDB.php';
      $stage = $_POST["stage"];
      $postal = $_POST["postalcode"];
 
-     $pass_cifrado = password_hash($pass , PASSWORD_DEFAULT);
 
+     $pass_cifrado=password_hash($pass,PASSWORD_BCRYPT);
+     // echo  $pass_cifrado;
      $sql="insert into users(email, password, name, lastname, postalcode, direction, city, stage, phonenumber, dni) values('$email', '$pass_cifrado', '$name', '$last', '$addr', '$phone', '$dni', '$city', '$stage', '$postal')";
 
      // echo $sql;
@@ -20,8 +21,10 @@ require 'controlDB.php';
 
      $obj->actualizar($sql);
 
- header("Status: 301 Moved Permanently");
- header("Location: http://localhost/index.php");
-     exit;
+
+
+  header("Status: 301 Moved Permanently");
+  header("Location: http://localhost/index.php");
+      exit;
 
  ?>

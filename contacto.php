@@ -44,10 +44,7 @@ include 'template/cabecera.php';
 </div>
 </div>
 
-<script>
-Se ha mandado la peticion
 
-</script>
 
 
 

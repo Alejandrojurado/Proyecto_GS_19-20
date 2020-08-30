@@ -1,11 +1,12 @@
 <?php
 // ob_start();
-// session_start();
+
 include 'actions/config.php';
 include 'actions/conexion.php';
 require 'actions/controlDB.php';
 include 'actions/carrito.php';
 include 'template/cabecera.php';
+
 ?>
      <!-- carousel -->
      <div class="row">
@@ -37,15 +38,12 @@ include 'template/cabecera.php';
      <div class="container margen_top ">
           <div class="row">
                <?php
-               $obj = new controlDB();
-               $datos=$obj->consultar("select * from  product");
-               //print_r($datos);
-               $datos=$pdo->prepare("select * from  product");
-               $datos->execute();
+                $datos=$pdo->prepare("select * from product order by idProduct desc limit 6");
+                $datos->execute();
                ?>
 
                <?php
-               $veces = 6;
+
                 foreach ($datos as $productos) {?>
                     <div class="col-3">
                          <div class="card targeta">

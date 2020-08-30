@@ -11,7 +11,8 @@ require 'controlDB.php';
 
 
      // $sql="insert into users(email, password, name, lastname, postalcode, direction, city, stage, phonenumber, dni) values('$email', '$pass_cifrado', '$name', '$last', '$addr', '$phone', '$dni', '$city', '$stage', '$postal')";
-     $sql="insert into contact (Name, Lastname, email, Text, Phone) VALUES ('$name', '$last', '$email', '$mensaje', '$phone')";
+     $sql="insert into contact (Name, Lastname, email, Text, Phone)
+     VALUES ('$name', '$last', '$email', '$mensaje', '$phone')";
      echo  $sql;
      $obj = new controlDB();
 
