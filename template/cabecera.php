@@ -21,7 +21,7 @@
                                <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                           </li>
                           <li class="nav-item active">
-                               <a class="nav-link" href="#">Contacto</a>
+                               <a class="nav-link" href="contacto.php">Contacto</a>
                           </li>
                           <li class="nav-item active">
                                <a class="nav-link" href="mostrarCarrito.php">Carrito(<?php
@@ -71,10 +71,12 @@
 
 
            <!--Jumbotron-->
-           <div class="jumbotron colores fondo" >
-                <div class="row">
-                     <div class="col">
-                          <img src="image/logo.png" alt="Logo de la empresa" id="tamno_logo">
+           <div class="container">
+                <div class="jumbotron colores fondo centro"  >
+                     <div class="row">
+                          <div class="col">
+                               <img src="image/logo.png" alt="Logo de la empresa" id="tamno_logo">
+                          </div>
                      </div>
                 </div>
            </div>
@@ -82,11 +84,12 @@
       <nav class="navbar navbar-expand-sm navbar-light sticky-top colores centro fondo ">
            <div class="collapse navbar-collapse centro" id="navbarNavAltMarkup">
                 <div class="navbar-nav centro">
-                    <button type="button" class="btn btn-secondary  margen">categorias</button>
-                    <button type="button" class="btn btn-secondary  margen">Large button</button>
-                    <button type="button" class="btn btn-secondary  margen">Large button</button>
-                    <button type="button" class="btn btn-secondary  margen">Large button</button>
-                    <button type="button" class="btn btn-secondary  margen">Large button</button>
+                    <a href="catalogo.php"><button type="button" class="btn btn-secondary  margen">Catalogo</button></a>
+                    </button>
+                    <!-- <button type="button" class="btn btn-secondary  margen">Large button</button> -->
+                    <!-- <button type="button" class="btn btn-secondary  margen">Large button</button> -->
+                    <!-- <button type="button" class="btn btn-secondary  margen">Large button</button> -->
+                    <!-- <button type="button" class="btn btn-secondary  margen">Large button</button> -->
                 </div>
            </div>
       </nav>

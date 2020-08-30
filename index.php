@@ -44,7 +44,9 @@ include 'template/cabecera.php';
                $datos->execute();
                ?>
 
-               <?php foreach ($datos as $productos) {?>
+               <?php
+               $veces = 6;
+                foreach ($datos as $productos) {?>
                     <div class="col-3">
                          <div class="card targeta">
                               <img src="<?php echo $productos['image'] ?>"
@@ -69,6 +71,7 @@ include 'template/cabecera.php';
                          </div>
                     </div>
                <?php } ?>
+
 
 
 
