@@ -116,8 +116,8 @@ if ($_POST) {
                     transactions: [
                         {
                             amount: { total: '<?php echo $total ?>', currency: 'EUR' },
-                            description:"Compra de productos a Develoteca:$0.01",
-                            custom:"Codigo"
+                            description:"Compra de productos en AlphaTactica:<?php echo number_format($total, 2); ?>€",
+                            custom:"<?php echo $SID ?>#<?php echo openssl_encrypt($idVenta,COD,KEY); ?>"
                         }
                     ]
                 }
@@ -128,7 +128,7 @@ if ($_POST) {
 
         onAuthorize: function(data, actions) {
             return actions.payment.execute().then(function() {
-                console.log(data);
+                // console.log(data);
                 window.location="verificador.php?paymentToken="+data.paymentToken+"&paymentID="+data.paymentID;
             });
         }
@@ -136,71 +136,6 @@ if ($_POST) {
     }, '#paypal-button-container');
 
 </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-               <!-- Set up a container element for the button -->
-               <!-- <div id="paypal-button-container"></div> -->
-
-               <!-- Include the PayPal JavaScript SDK -->
-               <!-- <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=EUR"></script> -->
-
-               <!-- <script> -->
-               <!-- // Render the PayPal button into #paypal-button-container
-               paypal.Buttons({ -->
-
-                    <!-- style: {
-                         color:  'gold',
-                         shape:  'pill',
-                         label:  'pay',
-                         height: 40
-                    }
-
-               }).render('#paypal-button-container');
-          </script> -->
-
-
-
-
-
 
 <?php
 include 'template/pie.php';

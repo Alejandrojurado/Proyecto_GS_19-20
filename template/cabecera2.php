@@ -37,26 +37,17 @@ if(!isset($_SESSION))
                                 ?>)</a>
                           </li>
 
-                          <li class="nav-item dropdown active margen_izquerda ">
+                          <li class="nav-item active">
+                               <a class="nav-link" href="">logout <span class="sr-only">(current)</span></a>
+                          </li>
+
+                          <li class="nav-item dropdown active">
                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Iniciar sesión
+                                    Zona Administrativa
                                </a>
                                <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
-                                    <form class="px-2 py-1 form-login" method="post" action="actions/login.php" >
-                                         <div class="form-group">
-                                              <label for="Email1">Email address </label>
-                                              <input type="email" class="form-control" id="email" name="email" placeholder="email@example.com" required>
-                                         </div>
-                                         <div class="form-group">
-                                              <label for="Password">Contraseña</label>
-                                              <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
-                                         </div>
-                                        <button type="submit"  class="btn btn-primary" name="login" id="login">Iniciar sesión</button>
-                                   </form>
-
-                                   <div class="dropdown-divider"></div>
-                                   <a class="dropdown-item" href="registro.php">Registrarse</a>
-                                   <a class="dropdown-item" href="forgot.php">Recuperar Contraseña</a>
+                                   <a class="dropdown-item" href="anadir.php">Insertar productos</a>
+                                   <a class="dropdown-item" href="actions/listado.php">Mostrar usuarios</a>
 
                               </div>
                          </li>
