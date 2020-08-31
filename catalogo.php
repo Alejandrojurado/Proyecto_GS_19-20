@@ -19,7 +19,7 @@ include 'template/cabecera.php';
           $datos->execute();
           ?>
 
-          
+
           <?php foreach ($datos as $productos ) {?>
                <div class="col-3">
                     <div class="card targeta">
@@ -31,7 +31,7 @@ include 'template/cabecera.php';
                          data-trigger="hover"
                          data-content="<?php echo $productos['Descripcion'] ?>" >
                          <div class="card-body">
-                              <span><?php echo $productos['Name'] ?></span>
+                              <span class="letra"><?php echo $productos['Name'] ?></span>
                               <h5 class="card-tittle"><?php echo $productos['Price'] ?>€</h5>
                               <form action="" method="post">
                                    <input type="hidden" name="id" id="id" value="<?php echo openssl_encrypt($productos['idProduct'],COD,KEY); ?>">

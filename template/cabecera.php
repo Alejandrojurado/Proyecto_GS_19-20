@@ -12,13 +12,14 @@ if(!isset($_SESSION))
     <link rel="shortcut icon" href="image/favicon.ico">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="boostrap/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
     <!--Css-->
     <link rel="stylesheet" href="css/style.css">
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
   </head>
 
-  <body class="fondo ">
+  <body class="fondo estiloletra ">
     <div class="container-fluid">
       <header>
            <!--menu sesion-->

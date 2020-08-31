@@ -52,10 +52,17 @@
   height: auto;
 }
 .letra{
-     font-size: 1rem;
+     font-size: 0,5rem;
      text-align: center;
 }
 
 .fondo2{
      background-color: #78866B;
+}
+.titulo{
+     text-align: center;
+
+}
+.estiloletra{
+     font-family: 'Lora', serif;
 }
