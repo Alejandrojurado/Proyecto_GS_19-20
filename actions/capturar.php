@@ -24,7 +24,7 @@ require 'controlDB.php';
 
 
   header("Status: 301 Moved Permanently");
-  header("Location: http://localhost/index.php");
+  header("Location: http://localhost/index_log.php");
       exit;
 
  ?>

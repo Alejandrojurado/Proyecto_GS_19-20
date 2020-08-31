@@ -72,7 +72,7 @@ include 'template/cabecera.php';
                                         <button type="submit" class="btn btn-primary btn-lg btn-block"
                                         name="btnAccion"
                                         value="proceder">
-                                             Porceder a pagar >>
+                                             Proceder a pagar >>
                                         </button>
                                    </form>
                               </td>

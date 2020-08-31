@@ -48,7 +48,7 @@ include 'template/cabecera.php';
                                </div>
                                <div class="form-group">
                                     <label for="inputAddress2">D.N.I</label>
-                                    <input type="text" class="form-control" id="dni" name="dni" placeholder="6441451451" >
+                                    <input type="text" class="form-control" id="dni" name="dni" placeholder="00000000X" >
                                </div>
                                <div class="form-row">
                                     <div class="form-group col-md-6">
