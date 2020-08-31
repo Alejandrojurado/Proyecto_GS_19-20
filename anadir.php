@@ -46,6 +46,8 @@ include 'template/cabecera2.php';
                                    <option>Cascos</option>
                                    <option>Gorras</option>
                                    <option>Protecciones</option>
+                                   <option>Camisetas</option>
+                                   <option>otros</option>
                               </select>
                          </div>
                          <div class="form-group">
